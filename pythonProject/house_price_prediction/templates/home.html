@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    {% load static %}
+    <style>
+        h2 {
+            margin-top: 100px;
+            font-size: 30px;
+        }
+        h1 {
+            font-size: 60px;
+
+        }
+        input[type=submit] {
+            cursor: pointer;
+            padding: 16px 32px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            padding: 16px 32px;
+            margin-right: 10px;
+        }
+        body {
+            background-image: url("{% static 'usa.jpg' %}");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body style="text-align:center">
+    <h2> Welcome to </h2>
+    <h1>
+        House Price Prediction System
+    </h1>
+    <form action="predict">
+        <input type="submit" value="START">
+
+    </form>
+</body>
+</html>
